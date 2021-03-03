@@ -2,12 +2,12 @@ Thanks to https://www.atlassian.com/git/tutorials/rewriting-history/git-rebase f
 
 This repository:
 
-- starts from `master`
+- starts from `main`
 - **forks** into `branch-1`
-- `master` is **rebased onto** `branch-1`
+- `main` is **rebased onto** `branch-1`
 - `branch-1` is merged back into master (-no-ff)
 
-Result: **all commits from c1 to c10+** appear in a straight line ( **git log** ) with a single merge commit
+Result: **all commits from c1 to c10+** appear in a straight line ( **git log** ) with a single merge commit in `main`
 
 Possible improvement: rebasing `branch-1` into `master` instead of merge
 
