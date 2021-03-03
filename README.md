@@ -1,5 +1,7 @@
 Thanks to https://www.atlassian.com/git/tutorials/rewriting-history/git-rebase for the great overview!
 
+> "Rebase" means: use <branch> as the base for the currently selected branch
+
 This repository:
 
 - starts from `main`
@@ -36,3 +38,7 @@ git rebase `interactive` seems a good approach to cherry-pick multiple commits, 
 from a> previous merge caused issues. If we don't need the commit information we can **Squash** them!
 
 > Git `bisect` is an interesting tool too for bug hunting! (basic example: https://www.metaltoad.com/blog/beginners-guide-git-bisect-process-elimination )
+
+### Partial changes and rebasing
+
+Attention: if after forking from `base` to `branch-1` we merge partial changes into `base` and then keep working on `branch-1` , t**he rebase is likely to bring back the old version of several files** when rebasing `base` into `branch-1` again!
