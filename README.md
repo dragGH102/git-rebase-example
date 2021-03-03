@@ -34,3 +34,5 @@ __c12+ here__
 
 git rebase `interactive` seems a good approach to cherry-pick multiple commits, e.g. when a subset of commits 
 from a> previous merge caused issues. If we don't need the commit information we can **Squash** them!
+
+> Git `bisect` is an interesting tool too for bug hunting! (basic example: https://www.metaltoad.com/blog/beginners-guide-git-bisect-process-elimination )
