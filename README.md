@@ -11,8 +11,6 @@ This repository:
 
 Result: **all commits from c1 to c10+** appear in a straight line ( **git log** ) with a single merge commit in `main`
 
-Possible improvement: rebasing `branch-1` into `master` instead of merge
-
 ---
 
 Commits list snapshot: ( `git log --pretty=oneline --abbrev-commit` )
