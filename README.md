@@ -29,6 +29,7 @@ __c12+ here__
 - cf29294 c2(branch-1): add add-2
 - faa2f63 c1: add add-1
 
+## PRO TIPS
 
 ### Git rebase interactive and squashing
 
@@ -40,3 +41,7 @@ from a> previous merge caused issues. If we don't need the commit information we
 ### Partial changes and rebasing
 
 Attention: if after forking from `base` to `branch-1` we merge partial changes into `base` and then keep working on `branch-1` , t**he rebase is likely to bring back the old version of several files** when rebasing `base` into `branch-1` again!
+
+We can rebase also when pulling!
+
+- `git pull` **--rebase** : very useful to avoid conflicts and have a smooth rebase of the pulled commits when the local and remote branches diverge following a rebase of the base branch
