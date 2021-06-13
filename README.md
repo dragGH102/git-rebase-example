@@ -41,7 +41,12 @@ from a> previous merge caused issues. If we don't need the commit information we
 ### Partial changes and rebasing
 
 Attention: if after forking from `base` to `branch-1` we merge partial changes into `base` and then keep working on `branch-1` , t**he rebase is likely to bring back the old version of several files** when rebasing `base` into `branch-1` again!
+  
+  FROM https://git-scm.com/book/en/v2/Git-Branching-Rebasing
+  
+  > When you rebase stuff, you’re abandoning existing commits and creating new ones that are similar but different. If you push commits somewhere and others pull them down and base work on them, and then you rewrite those commits with git rebase and push them up again, your collaborators will have to re-merge their work and things will get messy when you try to pull their work back into yours.
+REF: 
 
-We can rebase also when pulling!
+Rebase is one of the merge strategies git use (along with fast-forward/no-ff): we can rebase also when pulling!
 
 - `git pull` **--rebase** : very useful to avoid conflicts and have a smooth rebase of the pulled commits when the local and remote branches diverge following a rebase of the base branch
